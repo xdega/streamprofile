@@ -78,5 +78,17 @@
     <!-- Scripts -->
     <script src="/js/app.js"></script>
 
+    <script>
+/*
+        $( document ).ready(function() {
+            
+            $('img').error(function(){
+                $(this).attr('src', '/img/placeholder.png');
+            });
+
+        });
+*/
+    </script>
+
 </body>
 </html>
