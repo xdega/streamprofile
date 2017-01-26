@@ -46,10 +46,10 @@
             <p class="responsive-center">
                 <span class="profile-label profile-about" v-for="profile in this.profileData.profile_info">About {{profile.display_name}} </span>
             </p>
-            
+
             <p  class="about-content" 
                 v-for="profile in this.profileData.profile_info"
-                style="white-space: pre;"
+                style="white-space: pre-wrap;"
                 >{{ profile.about }}</p>
 
             <br>

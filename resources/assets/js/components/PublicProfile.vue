@@ -32,7 +32,7 @@
             </p>
             <p  class="about-content" 
                 v-for="profile in this.profileData.profile_info"
-                style="white-space: pre;"
+                style="white-space: pre-wrap;"
                 >{{ profile.about }}</p>
         </div>
 
