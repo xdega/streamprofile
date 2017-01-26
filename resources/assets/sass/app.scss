@@ -1,0 +1,297 @@
+// Variables
+$branding-font: 'Roboto', sans-serif;
+
+$brand-color-a: #f7d46b;
+$brand-color-b: #fff;
+
+$background-color-page: #111;
+$background-color-highlight: #222;
+$background-color-nav-hover: #333;
+
+$body-font: 'Roboto', sans-serif;
+$body-font-color: #eee;
+
+//Bulma Variable Overrides
+
+$body-background : $background-color-page;
+$primary: $brand-color-a;
+$background: $background-color-highlight;
+$text: $body-font-color;
+$radius-large: 0px;
+
+.is-danger {
+    border-color: hsl(348, 100%, 61%) !important;
+}
+
+.help.is-danger {
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+// Element Styling
+
+html {
+
+    background-color: $background-color-page !important;
+}
+
+body {
+    
+    /*padding: 40px;*/
+    color: $body-font-color !important;
+    font-family: $body-font !important;
+    font-weight: 300 !important;
+
+}
+
+a {
+    color: $brand-color-a !important;
+}
+
+footer {
+    display: flex !important;
+    flex-direction: column !important;
+    position: absolute !important;
+    width: 100% !important;
+    margin-top: 100% !important;
+}
+
+input {
+    margin-top: 12px !important;
+    background-color: #222 !important;
+    border-color: #555 !important;
+    border-radius: 0 !important;
+    color: #ddd !important;
+    height: 30px !important;
+    letter-spacing: 0.5px !important;
+}
+
+input:focus {
+    border-color: $brand-color-a !important;
+}
+
+//Form Element Styling
+.textarea {
+    border-radius: 0 !important;
+    background-color: $background-color-highlight !important;
+    color: #ddd !important;
+    border-color: #555 !important;
+    margin-top: 10px !important;
+}
+
+.textarea:focus {
+    border-color: $brand-color-a !important;
+}
+
+//Nav Styling
+
+.nav {
+    background-color: $background-color-highlight !important;
+    text-transform: uppercase !important;
+}
+
+
+.nav-item {
+    color: $brand-color-a !important;
+    border-bottom: none !important;
+}
+
+.nav-item:hover, .is-active {
+    color: $brand-color-b !important;
+}
+
+.nav-toggle:hover {
+    background-color:$background-color-nav-hover !important;
+}
+
+.branding {
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    font-family: $branding-font;
+    letter-spacing: 5px;
+}
+
+.logo-word1 {
+    color: $brand-color-a;
+}
+
+.logo-word2 {
+    color: $brand-color-b;
+}
+
+.username {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.about-content, .col-media-content {
+    margin-top: 10px;
+}
+
+.url-content, .subscribers-content {
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #222;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+//Avatar
+.user-info {
+
+    .image {
+        display: inline-block !important;
+    }
+    .image img {
+        border-radius: 70px;
+    }
+}
+
+.feed-header .image {
+    max-width: 100px !important;
+}
+
+.recent-broadcasts .image {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+.stream-feed {
+    margin-top: 10px !important;
+}
+
+.now-live {
+    background-color: #ff7676;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+.now-offline {
+    background-color: #ccc;
+    color: #222;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+.profile-label {
+    background-color: #222;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    line-height: 15px;
+    padding-bottom: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 5px;
+    letter-spacing: 1px;
+}
+
+.profile-recent {
+    width: 150px !important;
+}
+
+.profile-lookup {
+    margin-bottom: 10px;
+}
+
+//Page Layout Styling
+
+#app {
+    margin-top: 20px;
+}
+
+.container {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.vertical-middle {
+    vertical-align: middle !important;
+}
+
+.box {
+    background-color: $background-color-highlight !important;
+}
+
+.label {
+    color:$body-font-color !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+}
+
+.button {
+    border-radius: 0px !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+}
+
+.button.is-primary {
+    background-color: rgba(247, 212, 107, .85) !important;
+}
+
+.title {
+    text-transform: uppercase;
+    color: $body-font-color !important;
+}
+
+//Responsive Styling
+@media (max-width: 769px) {
+    .responsive-center {
+        text-align: center;
+    }
+
+    .responsive-content {
+        display: inherit;
+    }
+
+    .url-content, .subscribers-content {
+        margin-top: 10px;
+    }
+}
+
+//Edit Control Styling
+
+.delete-button {
+    background-color: #ff7676 !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    width: 25px !important;
+    height: 25px !important;
+    color: #fff !important;
+    font-weight: 800 !important;
+    border-color: rgba(0,0,0,0) !important;
+}
+
+//Error Page Styling
+
+.error-404 {
+    text-align: center;
+}
+
+.error-404 h1 {
+    font-size: 50px !important;
+}
+
+.error-404 p {
+    font-size: 20px;
+}
+
+.error-404 button {
+    margin-top: 10px;
+}
+
+//Bulma
+@import 'node_modules/bulma/bulma';
