@@ -46,11 +46,12 @@
             <p class="responsive-center">
                 <span class="profile-label profile-about" v-for="profile in this.profileData.profile_info">About {{profile.display_name}} </span>
             </p>
-            <p class="about-content" v-for="profile in this.profileData.profile_info">
+            
+            <p  class="about-content" 
+                v-for="profile in this.profileData.profile_info"
+                style="white-space: pre;"
+                >{{ profile.about }}</p>
 
-                {{ profile.about }}
-
-            </p>
             <br>
             <button v-for="profile in this.profileData.profile_info" v-if="!editAbout" class="button is-primary" v-on:click="editAboutButton(profile.about)"> Edit About </button>
             <button v-if="editAbout" class="button is-primary" v-on:click="updateAbout()"> Confirm Changes </button>

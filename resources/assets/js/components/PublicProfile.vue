@@ -30,11 +30,10 @@
             <p class="responsive-center">
                 <span class="profile-label profile-about" v-for="profile in this.profileData.profile_info">About {{profile.display_name}} </span>
             </p>
-            <p class="about-content" v-for="profile in this.profileData.profile_info">
-
-                {{ profile.about }}
-
-            </p>
+            <p  class="about-content" 
+                v-for="profile in this.profileData.profile_info"
+                style="white-space: pre;"
+                >{{ profile.about }}</p>
         </div>
 
     </div><!-- #End Row-->
