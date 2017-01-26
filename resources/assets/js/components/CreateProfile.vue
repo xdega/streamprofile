@@ -33,7 +33,14 @@
                 <!-- About -->
                 <label class="label has-text-centered">About</label>
                 <p class="control">  
-                    <input v-model="newProfile.about" name="about" type="text" class="input" placeholder="" :disabled="disabled == 1 ? true : false">
+                    <textarea 
+                        v-model="newProfile.about" 
+                        name="about" 
+                        type="text" 
+                        class="textarea" 
+                        :disabled="disabled == 1 ? true : false"
+                    ></textarea>
+
                 </p>
                 <p v-show="errors">
                     <strong v-text="errors.get('about')" class="help is-danger"></strong>

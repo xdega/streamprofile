@@ -22,7 +22,7 @@ class ApiProfilesController extends Controller
     public function store(Request $request){
 
         $rules = array(
-            'avatar'        => array('url', 'regex:~^https?://(?:[a-z0-9\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpg|gif|png)$~'),
+            'avatar'        => array('url', 'regex:~^https?://(?:[a-z0-9\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpe?g|gif|png)$~'),
             'about'         => array('string', 'max:1000' ),
             'display_name'  => array('required','min:3','unique:profiles','alpha_dash','max:255')
         );
@@ -52,7 +52,7 @@ class ApiProfilesController extends Controller
     public function update(Request $request, $id){
 
             $rules = array(
-                'avatar' => array('url', 'regex:~^https?://(?:[a-z0-9\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpg|gif|png)$~'
+                'avatar' => array('url', 'regex:~^https?://(?:[a-z0-9\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpe?g|gif|png)$~'
                 ),
                 'about'  => array('string', 'max:1000' )
             );
