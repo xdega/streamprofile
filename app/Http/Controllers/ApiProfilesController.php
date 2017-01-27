@@ -40,9 +40,10 @@ class ApiProfilesController extends Controller
 
             }
 
+            /*
             $image_headers = @get_headers($request->avatar);
 
-            if(!$image_headers || $image_headers[0] == 'HTTP/1.1 404 Not Found') {
+            if(!$image_headers || $image_headers[0] == 'HTTP/1.1 404 Not Found'   ) {
 
                 $response = array(
                     'avatar' => array('The avatar URL is broken.')
@@ -51,6 +52,8 @@ class ApiProfilesController extends Controller
                 return response()->json( $response )
                 ->setStatusCode(422, 'Unprocessable Entity');
             }
+            */
+
         
         return Profile::create($request->all());
 
