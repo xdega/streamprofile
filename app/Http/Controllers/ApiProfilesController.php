@@ -14,6 +14,10 @@ class ApiProfilesController extends Controller
     
     public function index(){
 
+        //$result = Profile::all()
+            //->select(['id','display_name','avatar','about'])->get();
+
+        //return $result;
         return Profile::all();
 
     }
@@ -34,6 +38,18 @@ class ApiProfilesController extends Controller
                 return response()->json( $validator->errors() )
                 ->setStatusCode(422, 'Unprocessable Entity');
 
+            }
+
+            $image_headers = @get_headers($request->avatar);
+
+            if(!$image_headers || $image_headers[0] == 'HTTP/1.1 404 Not Found') {
+
+                $response = array(
+                    'avatar' => array('The avatar URL is broken.')
+                );
+
+                return response()->json( $response )
+                ->setStatusCode(422, 'Unprocessable Entity');
             }
         
         return Profile::create($request->all());
@@ -64,6 +80,18 @@ class ApiProfilesController extends Controller
                 return response()->json( $validator->errors() )
                 ->setStatusCode(422, 'Unprocessable Entity');
 
+            }
+
+            $image_headers = @get_headers($request->avatar);
+
+            if(!$image_headers || $image_headers[0] == 'HTTP/1.1 404 Not Found') {
+
+                $response = array(
+                    'avatar' => array('The avatar URL is broken.')
+                );
+
+                return response()->json( $response )
+                ->setStatusCode(422, 'Unprocessable Entity');
             }
 
             $edit = Profile::find($id)->update($request->all());
