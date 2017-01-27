@@ -36,8 +36,7 @@ html {
 }
 
 body {
-    
-    /*padding: 40px;*/
+
     color: $body-font-color !important;
     font-family: $body-font !important;
     font-weight: 300 !important;
@@ -53,7 +52,19 @@ footer {
     flex-direction: column !important;
     position: absolute !important;
     width: 100% !important;
-    margin-top: 100% !important;
+    margin-top: 100px !important;
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+    line-height: 1px !important;
+    text-transform: uppercase !important;
+}
+
+footer {
+    .container {
+        .content{
+            color: #bbb !important;
+        }
+    }
 }
 
 input {
@@ -207,6 +218,7 @@ input:focus {
 
 #app {
     margin-top: 20px;
+    min-height: 500px !important;
 }
 
 .container {

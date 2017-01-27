@@ -72,7 +72,7 @@
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    Made with &hearts;, by Liam Hockley. 2017 &copy;
+                    Made with &hearts; by Liam Hockley. 2017 &copy;
                 </p>
             </div>
         </div>
@@ -80,18 +80,6 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
-
-    <script>
-/*
-        $( document ).ready(function() {
-            
-            $('img').error(function(){
-                $(this).attr('src', '/img/placeholder.png');
-            });
-
-        });
-*/
-    </script>
 
 </body>
 </html>
