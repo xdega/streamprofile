@@ -260,6 +260,20 @@ input:focus {
     .url-content, .subscribers-content {
         margin-top: 10px;
     }
+
+    .branding {
+        letter-spacing: 1px !important;
+    }
+
+    .nav-right {
+        display: flex !important;
+    }
+
+    .nav-item {
+        padding-left: 10px !important;
+        padding-right: 5px !important;
+    }
+
 }
 
 //Edit Control Styling

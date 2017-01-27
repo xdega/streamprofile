@@ -53,8 +53,11 @@
 
                 @else
 
-                    <a href="/dashboard" class="nav-item">Dashboard ( {{ Auth::user()->username }} )</a>
+                    <a href="/dashboard" class="nav-item">Dashboard 
+                    <span class="is-hidden-mobile">( {{ Auth::user()->username }} )</span></a>
+                    <span class="is-hidden-tablet" style="padding-top: 14px;">&nbsp;|&nbsp;</span>
                     <a href="/logout" class="nav-item">Log Out</a>
+
                 @endif
             </div>
 
